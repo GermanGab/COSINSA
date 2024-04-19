@@ -244,7 +244,75 @@ h1{
     font-weight: 600;
 }
 
+/*------------------------------Esto es lo del footer----------------------------------*/
+.footer{
+  display: grid;
+  grid-template-columns: 3, 1fr;
+  grid-template-areas:'titulo-footer titulo-footer titulo-footer' 
+                      'contacto contacto mapa'
+                      'coreo correo mapa '
+                      'derechos derechos derechos';
+  
+ }
 
+ .titulo-footer{
+  grid-area:titulo-footer;
+  display: flex;
+  justify-content: center;
+  color: #0065B3;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 40px;
+  padding: 0px;
+  margin: 0px 0px 40px 0px ;
+ }
+
+ .contacto{
+  grid-area: contacto;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-family: sans-serif;
+ }
+
+ .fa-solid{
+  color: blue;
+  font-size: 40PX;
+  padding-right: 15px;
+ }
+
+ .correo{
+  grid-area: correo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-family: sans-serif;
+  margin:0px 230px 90px 0px;
+ }
+ 
+ .mapa{
+  grid-area: mapa;
+ }
+
+ .derechos{
+  grid-area:derechos;
+  background-color: #0065B3;
+  color: white;
+  height: 40px;
+  height: 50px;
+  margin-top: 30px;
+ }
+
+ .derechos p{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+ }
 
 
 
