@@ -61,10 +61,37 @@ html{
     z-index: 100;
 }
 
+.btn-ubi{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    background-color: #a3a3a37e;
+    right: 30px;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    margin-bottom: 70px;
+}
+
+.btn-ubi i{
+    padding: 8px 0px 10px 0px ;
+    color:blue;
+}
+
 .btn-wsp:hover{
     text-decoration: none;
     color: #0df053;
     background: #fff;
+}
+
+.btn-ubi:hover{
+    text-decoration: none;
+    background-color: white;
 }
 
 .link-btn{
@@ -93,6 +120,13 @@ html{
     font-weight: 700;
     color:var(--blue1);
 }
+
+.header img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
 .header .nav a {
     margin: 0.5rem;
     margin-left: 1.4rem;
@@ -222,6 +256,10 @@ h1{
     font-size: 6rem;
 }
 
+.card-title a{
+    color: #fff;
+}
+
 #container-tarjetas{
     margin-top: 80px;
 }
@@ -248,70 +286,60 @@ h1{
 .footer{
   display: grid;
   grid-template-columns: 3, 1fr;
-  grid-template-areas:'titulo-footer titulo-footer titulo-footer' 
-                      'contacto contacto mapa'
-                      'coreo correo mapa '
-                      'derechos derechos derechos';
-  
+  grid-template-areas:'derechos derechos derechos';
+  height: 90px;
  }
 
- .titulo-footer{
-  grid-area:titulo-footer;
-  display: flex;
-  justify-content: center;
-  color: #0065B3;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 40px;
-  padding: 0px;
-  margin: 0px 0px 40px 0px ;
- }
 
  .contacto{
-  grid-area: contacto;
-  padding-top: 40px;
   display: flex;
   justify-content: center;
-  font-size: 20px;
-  font-family: sans-serif;
+  font-size: 15px;
  }
 
- .fa-solid{
-  color: blue;
-  font-size: 40PX;
+ .contacto .fa-solid{
+    font-size: 20px;
+    padding-right:15px ;
+ }
+
+ .correo .fa-solid{
+  color: rgb(16, 16, 68);;
+  font-size: 20px;
   padding-right: 15px;
  }
 
- .correo{
+ .correo {
   grid-area: correo;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-top: 20px;
   text-decoration: none;
-  color: black;
-  font-size: 20px;
-  font-family: sans-serif;
-  margin:0px 230px 90px 0px;
- }
- 
- .mapa{
-  grid-area: mapa;
- }
-
- .derechos{
-  grid-area:derechos;
-  background-color: var(--blue1);
-  color: white;
-  height: 40px;
-  height: 50px;
-  margin-top: 30px;
- }
-
- .derechos p{
   display: flex;
   justify-content: center;
   text-align: center;
-  padding-top: 10px;
-  font-size: 20px;
+ }
+
+ .correo p{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 15px;
+
+ }
+ 
+ .derechos{
+  grid-area:derechos;
+  background-color:var(--blue2) ;
+
+ }
+
+ .derechos p{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+    color:rgb(16, 16, 68);
  }
 
 
@@ -398,9 +426,62 @@ h1{
         margin: 0 auto;
         font-size: 3rem;
         font-weight: 300;
-    }
-
-
-    
+    }  
 }
 
+@media screen and (max-width:600px){
+  .footer{
+    display: grid;
+    grid-template-columns: 2, 1fr;
+    grid-template-areas:'titulo-footer titulo-footer titulo-footer' 
+                        'mapa mapa mapa'
+                        'contacto contacto contacto'
+                        'correo correo correo'
+                        'derechos derechos derechos';
+    grid-gap: 20px;
+   }
+
+
+   .contacto{
+    grid-area: contacto;
+    font-family: sans-serif;
+    font-size: 18px;
+
+   }
+  
+   .fa-solid{
+    color: blue;
+    font-size: 40PX;
+    padding-right: 15px;
+   }
+  
+   .correo{
+    grid-area: correo;
+    font-family: sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40%;
+   }
+  
+   .mapa{
+    grid-area: mapa;
+    width: 100%;
+   }
+  
+   .derechos{
+    grid-area:derechos;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+   }
+  
+   .derechos p{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+   }
+ }
