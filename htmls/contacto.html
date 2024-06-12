@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COSINSA</title>
+    <link rel="icon" href="../recursos/COSINSA.ico">
+
+    <!--ENLACE DE ICONOS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!--ENLACE BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+    
+
+    <!--ENLACE CSS-->
+    <link rel="stylesheet" href="../css´s/styles.css">
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            margin-top: 250px;
+        }
+
+        .form-container h2 {
+            margin-bottom: 20px;
+            font-size: 32px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+            font-size: 16px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 20px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .form-group button {
+            background-color: #0065B3;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .form-group button:hover {
+            background-color: #4992BF;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <!--Boton de WhatsApp-->
+    <a href="https://api.whatsapp.com/send?phone=9212240012" class="btn-wsp" target="_blank">
+	    <i class="fa-brands fa-whatsapp"></i>
+	</a>
+
+    <a href="https://maps.app.goo.gl/KUnKjx8b53Eb5V7R9" class="btn-ubi" target="_blank">
+	    <i class="fa-solid fa-location-dot"></i>
+	</a>
+
+    <!-- Seccion header-->
+    <header class="header fixed-top">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+
+                <a href="../index.html #home" class="logo"><span><strong><img src="../recursos/COSINSA.ico" alt="">COSINSA</strong></span></a>
+
+                <nav class="nav">
+
+                    <a href="../index.html">Inicio</a>
+                    <a href="../index.html #info">Información</a>
+                    <a href="../index.html #servicio">Servicios</a>
+                    
+
+                </nav>
+
+            </div>
+        </div>
+    </header>
+    <!--Fin seccion header-->
+
+
+
+    <div class="form-container">
+        <h2>Formulario de Contacto</h2>
+        <form action="https://formspree.io/f/xqkrrkek" method="post">
+            <div class="form-group">
+                <label for="first_name">Nombres:</label>
+                <input type="text" id="first_name" name="first_name" required>
+            </div>
+            <div class="form-group">
+                <label for="last_name">Apellidos:</label>
+                <input type="text" id="last_name" name="last_name" required>
+            </div>
+            <div class="form-group">
+                <label for="company_name">Nombre de la Empresa:</label>
+                <input type="text" id="company_name" name="company_name" required>
+            </div>
+            <div class="form-group">
+                <label for="service">Servicio que requiere:</label>
+                <select id="service" name="service" required>
+                    <option value="Desarrollo de ingeniería básica">Desarrollo de ingeniería básica</option>
+                    <option value="Obra mecánica">Obra mecánica</option>
+                    <option value="Tanques">Tanques</option>
+                    <option value="Obras civil">Obral civil</option>
+                    <option value="Obra électrica">Obra électrica</option>
+                    <option value="Instrumentación">Instrumentación</option>
+                    <option value="Redes contra incencio, sistema de gas y fuego">Redes contra incencio, sistema de gas y fuego</option>
+                    <option value="Mantenimiento">Mantenimiento</option>
+                    <option value="Pruebas">Pruebas</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+
+    </body>
+</html>
