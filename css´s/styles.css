@@ -154,7 +154,7 @@ html{
 .encabezado-img{
     width: auto;
     margin-top: 6rem;
-    background-image: url(../recursos/header.jpg);
+    background-image: url(../recursos/header.webp);
     height: 700px;
     background-size: cover;
     display: flex;
@@ -372,14 +372,15 @@ footer{
     
     .encabezado-img{
         display: flex;
-        width: 991px;   
+        width: auto;
+        height: 600px; 
     }
 
     .encabezado-img h3{
 
         padding-left: 3rem; padding-right: 3rem;
         margin: 0 auto;
-        font-size: 4rem;
+        font-size: 9vh;
         font-weight: 700;
         padding-bottom: 1.2rem;
     }
@@ -387,7 +388,7 @@ footer{
     .encabezado-img p{
         padding-left: 3rem; padding-right: 3rem;
         margin: 0 auto;
-        font-size: 3rem;
+        font-size: 6vh;
         font-weight: 300;
     }
 
