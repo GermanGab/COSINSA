@@ -662,11 +662,11 @@ footer{
 
     .card{
         width: 100vh;
-        height: 40vh;
+        height: 50vh;
     }
 
     .card>img{
-        height: 40vh;
+        height: 50vh;
     }
 
     .card-img-overlay .card-title>a{
