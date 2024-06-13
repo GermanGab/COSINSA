@@ -525,22 +525,22 @@ footer{
     }
     /*----------------------------------botones moviles----------------------------------*/
     .btn-wsp{
-        border-radius: 10vh;
-        width: 12vh;
-        height: 12vh;
+       border-radius: 10vh;
+        width: 20vh;
+        height: 20vh;
         line-height: 70px;
-        font-size: 6vh;
+        font-size: 10vh;
         margin-bottom: 1vh;
-        padding: 2vh 0px 10px 0px;
+        padding: 4vh 0px 10px 0px;
     }
 
     .btn-ubi{
         border-radius: 10vh;
-        width: 12vh;
-        height: 12vh;
-        padding: 2vh 0px 10px 0px;
-        font-size: 6vh;
-        margin-bottom: 15vh;
+        width: 20vh;
+        height: 20vh;
+        padding: 4vh 0px 10px 0px;
+        font-size: 11vh;
+        margin-bottom: 25vh;
     }
 
     .link-btn{
@@ -583,7 +583,7 @@ footer{
     }
 
     .header{
-        height: 15vh;
+        height: 20vh;
     }
 
     .row{
@@ -593,6 +593,10 @@ footer{
 
     .container{
         margin: 0;
+    }
+
+    .logo{
+        
     }
     /*----------------------------------encabezado----------------------------------*/
     
@@ -635,7 +639,7 @@ footer{
     }
 
     .card-img-overlay .card-title>a{
-        font-size: 4vh;
+        font-size: 6vh;
     }
 
     #servicio{
